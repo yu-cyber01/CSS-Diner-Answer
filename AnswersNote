@@ -60,8 +60,44 @@ lv.15 [Select the top orange] : orange:first-child
   Ex: p:first-child selects all first child <p> elements.
       div p:first-child selects all first child <p> elements that are in a <div>.
       
-lv.16 :
-lv.17 :
-lv.18 :
-lv.19 :
-lv.20 : 
+lv.16 [Select the apple and the pickle on the plates : plate :only-child
+  select element that is the only element inside of another one.
+  
+lv.17 [Select the small apple and the pickle] : .small:last-child
+  select element that is the last element inside of another element.
+  ** if there is only one element, that element counts as the first-child, only-child and last-child!
+  Ex: ul li:last-child select last <li> inside of <ul>
+  
+lv.18 [Select the 3rd plate] : plate:nth-child(3)
+    select the nth(1st, 2nd) child element in another element.
+    Ex: div p:nth-child(3) select 3rd <p> in <div>
+    
+lv.19 [Select the 1st bento]: bento:nth-last-child(3)
+  same idea with :nth-child but count from last one.
+  
+lv.20 [Select 1st apple] : apple:first-of-type
+  Selects the first element of that type within another element.
+  
+lv.21 [Select all even plates] : plate:nth-of-type(even)
+  Nth of type selector: select specific element based on its type and order (even,odd, instances of that element)
+  Ex: plate:nth-of-type(even) select all even instances of plate.
+      div:nth-of-type(2) selects the second instance of a div.
+      
+lv.22 [Select every 2nd plate, starting from the 3rd]: plate:nth-oftype(2n+3)
+  same idea with Nth of type selector but with formula.
+  
+lv.23 [Select the apple on the middle plate] : apple:only-of-type
+  Selects the only element of its type within another element.
+  
+lv.24 [Select the last apple and orange] : .small:last-of-type
+  Select the last element of a specific type
+  
+lv.25 : bento:empty
+lv.26 : apple:not(.small)
+lv.27
+lv.28
+lv.29
+lv.30
+lv.31
+lv.32
+
