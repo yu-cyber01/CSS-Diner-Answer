@@ -1,0 +1,67 @@
+CSS Diner
+
+lv.1 [select the plates] : plate 
+  select by tags Example: p selects all <p> elements.
+  
+lv.2 [select the bento boxes] : bento
+  select by tags
+  
+lv.3 [select the fancy plate] : #fancy
+  select with ID. Ex: #big selects the element with id="big".
+  also can combibe tags selector with ID selector. EX: h1#color select <h1 id="color">
+  
+lv.4 [select the apple on the plate]: plate apple
+  Descendant Selector: A B
+  Selects all B inside of A. B is called a descendant because it is inside of another element.
+  EX: plate apple selects all apples that are inside plate
+      p  strong selects all <strong> elements that are inside of any <p>
+      
+lv.5 [select the pickle on the plate]: #fancy pickle
+  Descendant Selector: select all pickles that are inside of #fancy.
+  
+lv.6 [select the small apples] : .small
+  select by class name. Ex: .small selects elements with class ="small".
+  
+lv.7 [select the small oranges] : orange.small
+  combine selectors: you can combine class selector with tags/IDS
+  Ex: orange.small select all <orange> that have class="small" 
+      #van.mini selects id="van" that also have class="mini" 
+      
+lv.8 [Select the small oranges in the bentos] : bento orange.small
+  select <bento> that have <orange class="small">
+
+lv.9 [Select all the plates and bentos]: plate, bento
+  Comma Combination: A, B
+  select all A and B elements.
+  Ex: plant, bento selects all plate and all bento
+  
+lv.10 [Select all the things!] : *
+  select everything
+  
+lv.11 [Select everything on a plate] :plate *
+
+lv.12 [Select every apple that's next to a plate] : plate + apple
+  Adjacent Sibling Selector: A + B select all B eements that directly follow A.
+  Ex: h1 + .cool select class="cool" that directly follow h1
+  
+lv.13 [Select the pickles beside the bento] : bento ~ pickle
+  General Sibling Selector: A ~ B select all of B instead of one that follow A.
+  
+lv.14 [Select the apple directly on a plate] : plate > apple
+  Child selector: A > B
+  child element is any element that are nested directly on anothe element. 
+  Ex: plate > apple 
+      <plate>
+        <apple/>
+      </plate>
+      
+lv.15 [Select the top orange] : orange:first-child
+  first child selector: selects all first child elements
+  Ex: p:first-child selects all first child <p> elements.
+      div p:first-child selects all first child <p> elements that are in a <div>.
+      
+lv.16 :
+lv.17 :
+lv.18 :
+lv.19 :
+lv.20 : 
